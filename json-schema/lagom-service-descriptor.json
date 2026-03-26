@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/api-evangelist/lagom/json-schema/lagom-service-descriptor.json",
+  "title": "Lagom Service Descriptor",
+  "description": "JSON Schema representing the structure of a Lagom service descriptor, defining service calls, topics, and ACLs.",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the service."
+    },
+    "calls": {
+      "type": "array",
+      "description": "List of service call definitions.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Name of the service call."
+          },
+          "method": {
+            "type": "string",
+            "description": "HTTP method for the call.",
+            "enum": ["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS"]
+          },
+          "path": {
+            "type": "string",
+            "description": "URL path pattern for the call (e.g., /api/items/:id)."
+          },
+          "circuitBreaker": {
+            "type": "object",
+            "description": "Circuit breaker configuration for this call.",
+            "properties": {
+              "enabled": {
+                "type": "boolean",
+                "default": true
+              },
+              "maxFailures": {
+                "type": "integer",
+                "default": 10
+              },
+              "callTimeout": {
+                "type": "string",
+                "description": "Duration string (e.g., 10s).",
+                "default": "10s"
+              },
+              "resetTimeout": {
+                "type": "string",
+                "description": "Duration string (e.g., 15s).",
+                "default": "15s"
+              }
+            },
+            "additionalProperties": true
+          },
+          "autoAcl": {
+            "type": "boolean",
+            "description": "Automatically generate ACL for this call.",
+            "default": true
+          }
+        },
+        "required": ["name", "path"],
+        "additionalProperties": true
+      }
+    },
+    "topics": {
+      "type": "array",
+      "description": "List of topic definitions for event publishing.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Topic name."
+          },
+          "partitionKeyStrategy": {
+            "type": "string",
+            "description": "Fully qualified class name of the partition key strategy."
+          }
+        },
+        "required": ["name"],
+        "additionalProperties": true
+      }
+    },
+    "acls": {
+      "type": "array",
+      "description": "Access control list entries.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "method": {
+            "type": "string",
+            "enum": ["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS"]
+          },
+          "pathRegex": {
+            "type": "string",
+            "description": "Regex pattern for matching request paths."
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "required": ["name"],
+  "additionalProperties": true
+}

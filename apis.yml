@@ -40,6 +40,12 @@ apis:
         url: https://www.lagomframework.com/documentation/
       - type: Getting Started
         url: https://www.lagomframework.com/get-started.html
+      - type: JSONSchema
+        url: >-
+          https://raw.githubusercontent.com/api-evangelist/lagom/refs/heads/main/json-schema/lagom-service-descriptor.json
+      - type: JSONSchema
+        url: >-
+          https://raw.githubusercontent.com/api-evangelist/lagom/refs/heads/main/json-schema/lagom-config.json
 common:
   - type: Website
     url: https://www.lagomframework.com/

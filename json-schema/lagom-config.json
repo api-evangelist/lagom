@@ -1,0 +1,130 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/api-evangelist/lagom/json-schema/lagom-config.json",
+  "title": "Lagom Application Configuration",
+  "description": "JSON Schema representing the Lagom framework configuration structure (application.conf in HOCON format) covering service locator, persistence, clustering, and broker settings.",
+  "type": "object",
+  "properties": {
+    "lagom": {
+      "type": "object",
+      "properties": {
+        "services": {
+          "type": "object",
+          "description": "Service locator configuration for locating other services.",
+          "additionalProperties": {
+            "type": "string",
+            "description": "URI of the service."
+          }
+        },
+        "persistence": {
+          "type": "object",
+          "description": "Persistence and read-side configuration.",
+          "properties": {
+            "maxNumberOfShards": {
+              "type": "integer",
+              "description": "Number of shards for persistent entity distribution.",
+              "default": 100
+            },
+            "snapshotAfter": {
+              "type": "integer",
+              "description": "Number of events before taking a snapshot.",
+              "default": 100
+            },
+            "askTimeout": {
+              "type": "string",
+              "description": "Timeout for asks to persistent entities.",
+              "default": "5s"
+            },
+            "readSide": {
+              "type": "object",
+              "properties": {
+                "cassandra": {
+                  "type": "object",
+                  "description": "Cassandra read-side processor settings.",
+                  "properties": {
+                    "keyspace": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": true
+                }
+              },
+              "additionalProperties": true
+            }
+          },
+          "additionalProperties": true
+        },
+        "broker": {
+          "type": "object",
+          "description": "Message broker configuration.",
+          "properties": {
+            "kafka": {
+              "type": "object",
+              "properties": {
+                "serviceNamePrefix": {
+                  "type": "string",
+                  "description": "Prefix for Kafka service name.",
+                  "default": "kafka_native"
+                },
+                "brokers": {
+                  "type": "string",
+                  "description": "Comma-separated list of Kafka broker addresses."
+                }
+              },
+              "additionalProperties": true
+            }
+          },
+          "additionalProperties": true
+        },
+        "cluster": {
+          "type": "object",
+          "description": "Akka Cluster settings for Lagom.",
+          "properties": {
+            "joinSelf": {
+              "type": "boolean",
+              "description": "Whether the node should join itself to form a cluster.",
+              "default": true
+            },
+            "exitJvm": {
+              "type": "boolean",
+              "description": "Exit the JVM on ActorSystem termination.",
+              "default": true
+            }
+          },
+          "additionalProperties": true
+        },
+        "circuitBreaker": {
+          "type": "object",
+          "description": "Default circuit breaker configuration.",
+          "properties": {
+            "default": {
+              "type": "object",
+              "properties": {
+                "enabled": {
+                  "type": "boolean",
+                  "default": true
+                },
+                "maxFailures": {
+                  "type": "integer",
+                  "default": 10
+                },
+                "callTimeout": {
+                  "type": "string",
+                  "default": "10s"
+                },
+                "resetTimeout": {
+                  "type": "string",
+                  "default": "15s"
+                }
+              },
+              "additionalProperties": true
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}
