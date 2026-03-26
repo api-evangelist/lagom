@@ -1,0 +1,28 @@
+aid: lagom
+name: Lagom
+description: >-
+  Lagom is a framework for building reactive microservices in Java and Scala based on Akka and Play.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Microservices
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/lagom/refs/heads/main/apis.yml
+created: '2026-03-26'
+modified: '2026-03-26'
+specificationVersion: '0.19'
+apis:
+  - aid: lagom:lagom
+    name: Lagom
+    description: >-
+      Lagom is a framework for building reactive microservices in Java and Scala based on Akka and Play.
+    humanURL: https://github.com/api-evangelist/lagom
+    tags:
+      - Microservices
+    properties: []
+common:
+  - type: Website
+    url: https://github.com/api-evangelist/lagom
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
