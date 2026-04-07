@@ -7,13 +7,13 @@ description: >-
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - Microservices
-  - Java
-  - Scala
-  - Reactive
   - Akka
-  - Frameworks
   - Event Sourcing
+  - Frameworks
+  - Java
+  - Microservices
+  - Reactive
+  - Scala
 url: >-
   https://raw.githubusercontent.com/api-evangelist/lagom/refs/heads/main/apis.yml
 created: '2026-03-26'
@@ -28,13 +28,13 @@ apis:
       distributed architectures.
     humanURL: https://www.lagomframework.com/
     tags:
-      - Microservices
-      - Java
-      - Scala
-      - Reactive
       - Akka
-      - Frameworks
       - Event Sourcing
+      - Frameworks
+      - Java
+      - Microservices
+      - Reactive
+      - Scala
     properties:
       - type: Documentation
         url: https://www.lagomframework.com/documentation/
