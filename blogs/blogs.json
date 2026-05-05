@@ -1,0 +1,13 @@
+{
+  "repo": "lagom",
+  "feeds": [
+    {
+      "source": "https://www.lagomframework.com/blog/",
+      "feed_url": "https://www.lagomframework.com/blog/atom.xml",
+      "saved": 10,
+      "title": "Lagom Blog"
+    }
+  ],
+  "post_count": 10,
+  "fetched": "2026-05-03T23:30:51Z"
+}
