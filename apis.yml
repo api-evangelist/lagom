@@ -38,7 +38,7 @@ apis:
     properties:
       - type: Documentation
         url: https://www.lagomframework.com/documentation/
-      - type: Getting Started
+      - type: GettingStarted
         url: https://www.lagomframework.com/get-started.html
       - type: JSONSchema
         url: >-
@@ -51,9 +51,9 @@ common:
     url: https://www.lagomframework.com/
   - type: Documentation
     url: https://www.lagomframework.com/documentation/
-  - type: Getting Started
+  - type: GettingStarted
     url: https://www.lagomframework.com/get-started.html
-  - type: GitHub Organization
+  - type: GitHubOrganization
     url: https://github.com/lagom
   - type: Blog
     url: https://www.lagomframework.com/blog/
