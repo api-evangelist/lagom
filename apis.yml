@@ -47,6 +47,8 @@ apis:
         url: >-
           https://raw.githubusercontent.com/api-evangelist/lagom/refs/heads/main/json-schema/lagom-config.json
 common:
+  - type: DomainSecurity
+    url: security/lagom-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/lightbend-inc-
   - type: Website
