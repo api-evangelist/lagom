@@ -32,6 +32,14 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/lagom.png
 tags:
   - Akka
   - Event Sourcing
+  - Framework
+  - Java
+  - Microservices
+  - Reactive
+  - Scala
+tags_raw:
+  - Akka
+  - Event Sourcing
   - Frameworks
   - Java
   - Microservices
@@ -51,6 +59,14 @@ apis:
       distributed architectures.
     humanURL: https://www.lagomframework.com/
     tags:
+      - Akka
+      - Event Sourcing
+      - Framework
+      - Java
+      - Microservices
+      - Reactive
+      - Scala
+    tags_raw:
       - Akka
       - Event Sourcing
       - Frameworks
