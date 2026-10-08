@@ -86,6 +86,12 @@ apis:
         url: >-
           https://raw.githubusercontent.com/api-evangelist/lagom/refs/heads/main/json-schema/lagom-config.json
 common:
+  - type: Plans
+    url: plans/lagom-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/lagom-rate-limits.yml
+  - type: FinOps
+    url: finops/lagom-finops.yml
   - type: DomainSecurity
     url: security/lagom-domain-security.yml
   - type: LinkedIn
