@@ -1,4 +1,4 @@
-# Lagom (lagom)
+# Lagom
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,51 +66,116 @@
 
 Lagom is an open source framework for building reactive microservice systems in Java and Scala, built on top of Akka and Play Framework, designed for distributed architectures.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/lagom/refs/heads/main/apis.yml)
+**Areas:** Akka · Event Sourcing · Framework · Java · Microservices · Reactive · Scala
 
-## Scope
+## Lagom on APIs.io
 
-- **Type:** Index
-- **Position:** Consuming
-- **Access:** 3rd-Party
+Everything profiled for Lagom is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/lagom/](https://apis.io/providers/lagom/)** — or go straight to one of the APIs or properties below.
 
-## Tags:
+### APIs (1)
 
- - Akka, Event Sourcing, Frameworks, Java, Microservices, Reactive, Scala
+- [Lagom](https://apis.io/apis/lagom/lagom/) — Lagom is an open source framework for building reactive microservice systems in Java and Scala, built on top of Akka and Play Framework, designed for…
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-03-26
-- **Modified:** 2026-04-28
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### JSON Schema (2)
 
-### Lagom
-Lagom is an open source framework for building reactive microservice systems in Java and Scala, built on top of Akka and Play Framework, designed for distributed architectures.
+The data models the API reads and writes.
 
-**Human URL:** [https://www.lagomframework.com/](https://www.lagomframework.com/)
+- [Lagom Application Configuration](https://apis.io/schemas/lagom/lagom-config/)
+- [Lagom Service Descriptor](https://apis.io/schemas/lagom/lagom-service-descriptor/)
 
-#### Tags:
+#### Governance rules (1)
 
- - Akka, Event Sourcing, Frameworks, Java, Microservices, Reactive, Scala
+Spectral rulesets for the provider's contracts.
 
-#### Properties
+- [Lagom — jsonschema rules](https://apis.io/rules/lagom/lagom-jsonschema-spectral-rules/)
 
-- [Documentation](https://www.lagomframework.com/documentation/)
-- [Getting Started](https://www.lagomframework.com/get-started.html)
-- [JSONSchema - Service Descriptor](https://raw.githubusercontent.com/api-evangelist/lagom/refs/heads/main/json-schema/lagom-service-descriptor.json)
-- [JSONSchema - Config](https://raw.githubusercontent.com/api-evangelist/lagom/refs/heads/main/json-schema/lagom-config.json)
+#### Security (1)
 
-## Common Properties
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Lagom Domain Security](https://apis.io/security/lagom/lagom-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Lagom Plans Pricing](https://apis.io/plans/lagom/lagom-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Lagom Rate Limits](https://apis.io/rate-limits/lagom/lagom-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Lagom Finops](https://apis.io/finops/lagom/lagom-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.lagomframework.com/)
 - [Documentation](https://www.lagomframework.com/documentation/)
-- [Getting Started](https://www.lagomframework.com/get-started.html)
-- [GitHub Organization](https://github.com/lagom)
+- [Getting started](https://www.lagomframework.com/get-started.html)
 - [Blog](https://www.lagomframework.com/blog/)
+- [GitHub](https://github.com/lagom)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
+**Kin Score 10.6** — minimal · rubric 0.24.0 · scored 2026-10-17
 
-**Email:** kin@apievangelist.com
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 12.0 |
+| Contract governance | 9.8 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 0.0 |
+| Access clarity | 7.9 |
+
+**Agent readiness 0.6** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.9** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/lagom/](https://apis.io/providers/lagom/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Lagom: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/lagom/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
